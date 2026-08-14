@@ -2,6 +2,50 @@
 
 Resultado de ejecutar el [prompt de evaluación](../../README.MD#prompt-usado-para-evaluar-requerimientos-vs-personas-usuarios-modelo) definido en el README, aplicando la rúbrica de [Eval-Spec.MD](Eval-Spec.MD) sobre [ReqFunc.MD](../../Requirements/ReqFunc.MD) y [ReqNoFunc.MD](../../Requirements/ReqNoFunc.MD) contra las personas [Pablo](../../Personas/UM-Pablo.MD), [Claudia](../../Personas/UM-Claudia.MD) y [Roberto](../../Personas/UM-Roberto.MD).
 
+## Rúbrica Individual por Persona
+
+### Rúbrica: Pablo (Médico internista)
+
+| # | Necesidad | Tipo |
+|---|---|---|
+| 1 | Recibir y registrar el diagnóstico y evolución de cada paciente de forma rápida apenas empieza su turno | Objetivo |
+| 2 | Confiar que el diagnóstico del médico anterior está completo, actualizado y disponible antes de tomar decisiones | Objetivo |
+| 3 | Minimizar el tiempo dedicado a la aplicación para poder concentrarse en el paciente | Objetivo |
+| 4 | Cambios de turno donde la información del paciente se pierde, se entrega verbalmente o queda incompleta | Frustración |
+| 5 | Aplicaciones lentas o complejas de configurar, poco intuitivas para alguien que rota de hospital cada pocas semanas | Frustración |
+| 6 | Falta de certeza sobre si el sistema estará disponible en el momento crítico (caídas del sistema) | Frustración |
+
+**Score Pablo = promedio simple de las 6 necesidades.**
+
+### Rúbrica: Claudia (Enfermera UCI)
+
+| # | Necesidad | Tipo |
+|---|---|---|
+| 1 | Ser notificada cuando cambie el estado de un paciente o cuando el médico registre una nueva indicación | Objetivo |
+| 2 | Poder escalar rápidamente una emergencia al médico de guardia si un paciente se agrava en la madrugada | Objetivo |
+| 3 | Tener certeza de que la información que registra (signos vitales, observaciones, etc) queda guardada y disponible para el equipo médico | Objetivo |
+| 4 | No saber a quién contactar cuando el médico encargado no responde en el turno noche | Frustración |
+| 5 | Notificaciones que llegan tarde o se pierden entre varios médicos/enfermeras | Frustración |
+
+**Score Claudia = promedio simple de las 5 necesidades.**
+
+### Rúbrica: Roberto (Médico de guardia / Coordinador)
+
+| # | Necesidad | Tipo |
+|---|---|---|
+| 1 | Tener una vista clara de los horarios de todo el personal médico y de enfermería, sin cruces de turnos ni huecos de cobertura | Objetivo |
+| 2 | Ser contactado de forma efectiva si sucede una emergencia y ser el médico de respaldo disponible | Objetivo |
+| 3 | Escalar el piloto sin que la gestión de horarios se vuelva caótica | Objetivo |
+| 4 | Cruces de horarios que dejan turnos sin cobertura médica | Frustración |
+| 5 | No tener visibilidad de quién está realmente disponible en un momento dado (turnos, ausencias, respaldos) | Frustración |
+| 6 | Herramientas que no escalan: lo que funciona para un hospital no funciona para cientos o miles | Frustración |
+
+**Score Roberto = promedio simple de las 6 necesidades.**
+
+**Score Global = promedio simple de Score Pablo, Score Claudia y Score Roberto. Veredicto PASSED si Score Global ≥ 7/10 y ninguna persona < 5/10.**
+
+---
+
 ## ITERACIÓN #1
 
 ### Persona: Pablo (Médico internista)
